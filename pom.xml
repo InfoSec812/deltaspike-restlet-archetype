@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.zanclus.codepalousa</groupId>
-  <artifactId>deltaspike-restlet-archetype-archetype</artifactId>
+  <artifactId>deltaspike-restlet-archetype</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
-  <name>deltaspike-restlet-archetype-archetype</name>
+  <name>deltaspike-restlet-archetype</name>
 
   <build>
     <extensions>
