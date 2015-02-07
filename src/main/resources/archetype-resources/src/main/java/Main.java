@@ -1,4 +1,7 @@
-package __package__;
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+package ${package};
 
 import org.apache.deltaspike.cdise.api.CdiContainer;
 import org.apache.deltaspike.cdise.api.CdiContainerLoader;
@@ -24,11 +27,11 @@ public class Main {
         contextControl.startContexts();
         // You can use CDI here
         
+        CdiObjectFactory objectFactory = new CdiObjectFactory();
+        
         Component component = new Component();
         Server server = new Server(Protocol.HTTP, PORT);
         component.getServers().add(server);
-        
-        CdiObjectFactory objectFactory = new CdiObjectFactory();
 
         JaxRsApplication jaxRsApplication = new JaxRsApplication(component.getContext().createChildContext());
         jaxRsApplication.add(new Application());

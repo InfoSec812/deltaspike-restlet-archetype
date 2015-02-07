@@ -8,20 +8,21 @@
  */
 package ${package};
 
-import java.util.HashSet;
-import java.util.Set;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.Response;
 
 /**
  *
  * @author dphillips
  */
-public class Application extends javax.ws.rs.core.Application {
+@Path("/example")
+@Produces({"text/plain"})
+public class ExampleRest {
 
-    @Override
-    public Set<Class<?>> getClasses() {
-        Set<Class<?>> rrcs = new HashSet<>();
-        rrcs.add(ExampleRest.class);
-        // Add JAX-RS Annotated classes to the HashSet
-        return rrcs;
+    @GET
+    public String getServerTime() {
+        return System.currentTimeMillis()+"";
     }
 }

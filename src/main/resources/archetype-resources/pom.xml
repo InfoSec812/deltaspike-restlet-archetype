@@ -12,6 +12,7 @@
         <deltaspike.version>1.2.0</deltaspike.version>
         <weld.version>1.1.19.Final</weld.version>
         <restlet.version>2.3.0</restlet.version>
+        <junit.version>4.12</junit.version>
     </properties>
     <dependencies>
         <dependency>
@@ -46,18 +47,6 @@
         </dependency>
         <dependency>
             <groupId>org.restlet.jse</groupId>
-            <artifactId>org.restlet.ext.raml</artifactId>
-            <version>${restlet.version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.restlet.jse</groupId>
-            <artifactId>org.restlet.ext.swagger</artifactId>
-            <version>${restlet.version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.restlet.jse</groupId>
             <artifactId>org.restlet.ext.guice</artifactId>
             <version>${restlet.version}</version>
             <scope>compile</scope>
@@ -86,6 +75,13 @@
             <artifactId>weld-se</artifactId>
             <version>${weld.version}</version>
             <scope>runtime</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
