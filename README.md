@@ -25,6 +25,7 @@ but until that time you will have to check out the project and install it locall
     mkdir /path/to/new/project
     cd /path/to/new/project
     mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=com.zanclus -DarchetypeArtifactId=deltaspike-restlet-archetype
+    cd new-project-dir-created-by-maven
     mvn clean test exec:java
 
 Maven will interactively prompt you to build the template application. When you 
