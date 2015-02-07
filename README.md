@@ -22,6 +22,14 @@ but until that time you will have to check out the project and install it locall
     git clone https://github.com/InfoSec812/deltaspike-restlet-archetype.git
     cd deltaspike-restlet-archetype
     mvn clean install
+    mkdir /path/to/new/project
+    cd /path/to/new/project
     mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=com.zanclus -DarchetypeArtifactId=deltaspike-restlet-archetype
+    mvn clean test exec:java
 
-Maven will interactively prompt you to build the template application.
+Maven will interactively prompt you to build the template application. When you 
+run the archetype application with the "exec:java" goal it will start up
+listening on port 8080 and you can try out the example ReST endpoint
+http://localhost:8080/rest/example
+
+The example endpoint only returns the systemTimeInMillis value.
