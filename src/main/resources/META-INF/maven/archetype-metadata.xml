@@ -21,11 +21,5 @@
         <include>**/*.java</include>
       </includes>
     </fileSet>
-    <fileSet encoding="UTF-8">
-      <directory></directory>
-      <includes>
-        <include>.gitignore</include>
-      </includes>
-    </fileSet>
   </fileSets>
 </archetype-descriptor>
