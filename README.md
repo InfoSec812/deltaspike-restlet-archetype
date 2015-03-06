@@ -19,14 +19,16 @@ Using
 We are working on getting this archetype into the Maven Central Repository,
 but until that time you will have to check out the project and install it locally.
 
-    git clone https://github.com/InfoSec812/deltaspike-restlet-archetype.git
-    cd deltaspike-restlet-archetype
-    mvn clean install
-    mkdir /path/to/new/project
-    cd /path/to/new/project
-    mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=com.zanclus -DarchetypeArtifactId=deltaspike-restlet-archetype
-    cd new-project-dir-created-by-maven
-    mvn clean test exec:java
+```bash
+$ git clone https://github.com/InfoSec812/deltaspike-restlet-archetype.git
+$ cd deltaspike-restlet-archetype
+$ mvn clean install
+$ mkdir /path/to/new/project
+$ cd /path/to/new/project
+$ mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=com.zanclus -DarchetypeArtifactId=deltaspike-restlet-archetype
+$ cd new-project-dir-created-by-maven
+$ mvn clean test exec:java
+```
 
 Maven will interactively prompt you to build the template application. When you 
 run the archetype application with the "exec:java" goal it will start up
