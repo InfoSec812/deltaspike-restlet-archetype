@@ -19,7 +19,7 @@ Using
 The archetype is available from Maven Central
 
 ```bash
-$ mvn archetype:generate -DarchetypeGroupId=com.zanclus.codepalousa -DarchetypeArtifactId=deltaspike-restlet-archetype -DarchetypeVersion=2.3.0
+$ mvn archetype:generate -DarchetypeGroupId=com.zanclus.codepalousa -DarchetypeArtifactId=deltaspike-restlet-archetype -DarchetypeVersion=2.3.1
 ```
 
 Maven will interactively prompt you to build the template application. When you 
