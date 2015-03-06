@@ -9,9 +9,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <deltaspike.version>1.2.0</deltaspike.version>
+        <deltaspike.version>1.2.1</deltaspike.version>
         <weld.version>1.1.19.Final</weld.version>
-        <restlet.version>2.3.0</restlet.version>
+        <restlet.version>2.3.1</restlet.version>
         <junit.version>4.12</junit.version>
     </properties>
     <dependencies>
